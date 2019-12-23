@@ -1,0 +1,10 @@
+// http://www.modularscale.com/?16&px&1.125&sass&table
+
+@import '~modularscale-sass/stylesheets/modularscale'
+@import 'mixins'
+
+$modularscale: (base: 1em, ratio: $major-second, 480px: (base: 14px), 1600px: (base: 18px))
+
+html
+    @include ms-respond(font-size, 0)
+    line-height: strip-unit(ms(1))

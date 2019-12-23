@@ -1,0 +1,6 @@
+{
+    "host": "https://cloud.squidex.io",
+    "base_path": "/api/content/confiance-energie",
+    "client_id": "confiance-energie:appli-vrp",
+    "client_secret": "zfV4ALMrx1V6utKMRjKBaw6Z2TEGKLdfoL7KSPpRjAY="
+}

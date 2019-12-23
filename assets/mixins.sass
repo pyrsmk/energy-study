@@ -1,0 +1,27 @@
+@mixin title-lines($width: 70%)
+    width: $width
+    overflow: hidden
+    margin-left: auto
+    margin-right: auto
+
+    &::before, &::after
+        content: ''
+        display: inline-block
+        width: 50%
+        vertical-align: middle
+        border-bottom: 1px solid
+
+    &::before
+        margin: 0 .5em 0 -55%
+
+    &::after
+        margin: 0 -55% 0 .5em
+
+@mixin clearfix()
+    &::after
+        display: block
+        content: ''
+        clear: both
+
+@function strip-unit($value)
+    @return $value / ($value * 0 + 1)
