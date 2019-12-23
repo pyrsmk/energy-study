@@ -1,0 +1,62 @@
+// Optimize fonts
+html
+    font-feature-settings: 'kern' 1
+    font-kerning: normal
+    -webkit-text-size-adjust: 100%
+    text-rendering: optimizeLegibility
+
+// Margin reset for some elements
+body, p, ul, ol, hr, dl, fieldset, table, pre,
+blockquote, code, h1, h2, h3, h4, h5, h6
+    margin: 0
+
+// Default styles for some elements
+body
+    color: #111
+
+abbr[title], dfn[title]
+    cursor: help
+
+mark
+    background-color: yellow
+    background-color: rgba(yellow, 0.7)
+
+nav ul, nav ol
+    list-style-type: none
+    padding: 0
+
+blockquote
+    font-style: italic
+
+ins
+    background: #ff9
+    color: #000
+    text-decoration: none
+
+// Show a pointer over a button
+button
+    cursor: pointer
+
+// A better looking horizontal rule
+hr
+    display: block
+    height: 1px
+    border: 0
+    border-top: 1px solid #ccc
+    margin: 1em 0
+    padding: 0
+
+// Allow vertical resizing only
+textarea
+    resize: vertical
+
+// Change font color for inputs and buttons
+button, select, input, textarea
+    color: #222
+input:placeholder, textarea:placeholder
+    color: #999
+
+// Remove text-shadow from selected text and set a default background
+::selection
+    text-shadow: none
+    background: currentColor
